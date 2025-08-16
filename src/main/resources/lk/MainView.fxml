@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.disaster.controller.MainController">
+    <center>
+        <TabPane prefHeight="800.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab text="Report Disaster">
+                    <fx:include source="ReportFormView.fxml" />
+                </Tab>
+                <Tab text="Admin View">
+                    <fx:include source="AdminView.fxml" />
+                </Tab>
+                <Tab text="Dashboard">
+                    <fx:include source="DashboardView.fxml" />
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>
